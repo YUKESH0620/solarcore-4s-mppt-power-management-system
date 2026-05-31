@@ -109,7 +109,7 @@ The hardware is partitioned into functionally distinct yet electrically integrat
 
 ### Sheet 1 – System Architecture
 
-IMAGE_PLACEHOLDER_SYSTEM_ARCHITECTURE
+<img width="1290" height="817" alt="Screenshot 2026-05-30 160639" src="https://github.com/user-attachments/assets/ce6d2088-4867-4975-a375-c417a57004d1" />
 
 - **What it does:** Defines top-level electrical partitioning and subsystem interconnections.  
 - **How it connects:** Serves as the integration map linking energy path, control path, sensing path, and interfaces.  
@@ -118,7 +118,7 @@ IMAGE_PLACEHOLDER_SYSTEM_ARCHITECTURE
 
 ### Sheet 2 – STM32 Controller and Monitoring System
 
-IMAGE_PLACEHOLDER_STM32_CONTROLLER
+<img width="1231" height="816" alt="Screenshot 2026-05-30 160711" src="https://github.com/user-attachments/assets/d222e3e6-faa9-43df-8a09-9627b0b6dcc9" />
 
 - **What it does:** Implements the STM32F103C8T6 control core and measurement interface endpoints.  
 - **How it connects:** Interfaces with sensing networks, BMS communication paths, and debug/programming ports.  
@@ -127,7 +127,7 @@ IMAGE_PLACEHOLDER_STM32_CONTROLLER
 
 ### Sheet 3 – 4S LiFePO4 Battery Management System (BMS)
 
-IMAGE_PLACEHOLDER_BMS
+<img width="1239" height="822" alt="Screenshot 2026-05-30 160742" src="https://github.com/user-attachments/assets/10784d9a-270b-4f5a-91f3-aefc215e20ba" />
 
 - **What it does:** Defines multi-cell monitoring and battery protection topology for 4S LiFePO4.  
 - **How it connects:** Ties directly to the battery stack and exchanges status/control data with the controller domain.  
@@ -136,7 +136,7 @@ IMAGE_PLACEHOLDER_BMS
 
 ### Sheet 4 – Charge and Discharge Protection Stage
 
-IMAGE_PLACEHOLDER_POWER_SWITCH
+<img width="1241" height="820" alt="Screenshot 2026-05-30 160825" src="https://github.com/user-attachments/assets/976ed66b-57aa-4675-b47d-a635aa07d03a" />
 
 - **What it does:** Implements controlled charge/discharge path switching and protection behavior.  
 - **How it connects:** Sits between charging node, battery pack, and downstream distribution interfaces.  
@@ -145,7 +145,7 @@ IMAGE_PLACEHOLDER_POWER_SWITCH
 
 ### Sheet 5 – Output Connectors and Protection
 
-IMAGE_PLACEHOLDER_OUTPUT_CONNECTORS
+<img width="1235" height="817" alt="Screenshot 2026-05-30 160904" src="https://github.com/user-attachments/assets/8dbc7651-1faa-49ae-91db-108f94713b8a" />
 
 - **What it does:** Defines external output connectors and protection elements for load interfacing.  
 - **How it connects:** Receives power from distribution rails and routes to protected output endpoints.  
@@ -154,7 +154,7 @@ IMAGE_PLACEHOLDER_OUTPUT_CONNECTORS
 
 ### Sheet 6 – Power Distribution and Voltage Rails
 
-IMAGE_PLACEHOLDER_POWER_DISTRIBUTION
+<img width="1235" height="817" alt="Screenshot 2026-05-30 160942" src="https://github.com/user-attachments/assets/cc2e75d4-659b-4a98-bf50-d62cc5529437" />
 
 - **What it does:** Implements rail generation/distribution strategy for system and external loads.  
 - **How it connects:** Receives upstream battery-sourced power and feeds 12V, 5V, and 3.3V domains.  
@@ -163,7 +163,7 @@ IMAGE_PLACEHOLDER_POWER_DISTRIBUTION
 
 ### Sheet 7 – USB Type-C Debug and Programming Interface
 
-IMAGE_PLACEHOLDER_USB_DEBUG
+<img width="1225" height="810" alt="Screenshot 2026-05-30 161018" src="https://github.com/user-attachments/assets/df13234e-9328-414b-9ef5-351841a08277" />
 
 - **What it does:** Provides USB Type-C based debug/programming communication access.  
 - **How it connects:** Bridges USB interface to MCU UART/debug domain through CP2102N.  
@@ -213,19 +213,19 @@ Design strategy emphasizes:
 
 ## PCB Top View
 
-IMAGE_PLACEHOLDER_PCB_TOP
+<img width="1512" height="841" alt="Screenshot 2026-05-30 160011" src="https://github.com/user-attachments/assets/0552a85c-4f2e-4eeb-a5a3-27e07e57953e" />
 
 Top-side view showing component distribution, power-stage zoning, and control-domain placement.
 
 ## PCB Bottom View
 
-IMAGE_PLACEHOLDER_PCB_BOTTOM
+<img width="1512" height="839" alt="Screenshot 2026-05-30 160140" src="https://github.com/user-attachments/assets/64d7612d-053e-4a0e-9c40-a3f586b4cbf4" />
 
 Bottom-side view highlighting complementary routing channels, plane interactions, and connector breakout strategy.
 
 ## PCB Perspective View
 
-IMAGE_PLACEHOLDER_PCB_PERSPECTIVE
+<img width="1469" height="799" alt="Screenshot 2026-05-31 214424" src="https://github.com/user-attachments/assets/f772c06e-a600-49e6-b6e8-228edde30011" />
 
 Perspective rendering for holistic visualization of mechanical placement balance and subsystem segregation.
 
@@ -235,19 +235,19 @@ Perspective rendering for holistic visualization of mechanical placement balance
 
 ## Assembly Drawing
 
-IMAGE_PLACEHOLDER_DRAFTSMAN_ASSEMBLY
+<img width="1196" height="849" alt="Screenshot 2026-05-30 160304" src="https://github.com/user-attachments/assets/e0ee6811-4667-4e90-9f43-6c0f3ef5bdb7" />
 
 Documents component references, placement orientation, and assembly guidance for board population workflow.
 
 ## Layer Documentation
 
-IMAGE_PLACEHOLDER_DRAFTSMAN_LAYERS
+<img width="1198" height="848" alt="Screenshot 2026-05-30 160330" src="https://github.com/user-attachments/assets/80df41ec-bf63-4052-a573-c8555ef5fede" />
 
 Provides per-layer visual references and stack representation to support fabrication and design review.
 
 ## Manufacturing Documentation
 
-IMAGE_PLACEHOLDER_DRAFTSMAN_MANUFACTURING
+<img width="1200" height="846" alt="Screenshot 2026-05-30 160357" src="https://github.com/user-attachments/assets/ada58aef-dd77-43c7-8887-8e9a52ca481b" />
 
 Consolidates production-facing notes, callouts, and output package references for fabrication handoff.
 
@@ -364,7 +364,27 @@ The following activities are planned for subsequent project phases:
 
 ## 18. License
 
-This project is licensed under **CC BY-NC-ND 4.0**.
+This project is licensed under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)**.
+
+### You are permitted to:
+
+- View and study the project
+- Use the project for educational purposes
+- Share links to this repository
+- Reference the work with proper attribution
+
+### You may NOT:
+
+- Use any part of this project for commercial purposes
+- Modify and redistribute the design files
+- Reproduce the PCB, schematic, firmware, or documentation for commercial products
+- Publish derivative works based on this project without explicit permission
+
+All design files, schematics, PCB layouts, firmware, documentation, images, and manufacturing outputs remain the intellectual property of the author unless otherwise stated.
+
+For licensing inquiries or commercial permissions, please contact the author.
+
+© 2026 Yukesh S. All Rights Reserved.
 
 ---
 
@@ -372,3 +392,4 @@ This project is licensed under **CC BY-NC-ND 4.0**.
 
 **Yukesh S**  
 Embedded Systems and PCB Design Enthusiast
+For project discussions, feedback, or collaboration opportunities, please open an issue in this repository.
